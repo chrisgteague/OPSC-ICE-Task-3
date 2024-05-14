@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "21488340121",
+    "project_id": "opsc-ice-task",
+    "storage_bucket": "opsc-ice-task.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21488340121:android:c734c7d06717b759127c08",
+        "android_client_info": {
+          "package_name": "com.example.opsc_ice3_st10083450"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3ZiFfcofaBnztw38sWT1WshsxCnM8i0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21488340121:android:d2d7f8e2b2038d70127c08",
+        "android_client_info": {
+          "package_name": "com.example.opsc_icetask3_st10083450"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3ZiFfcofaBnztw38sWT1WshsxCnM8i0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
