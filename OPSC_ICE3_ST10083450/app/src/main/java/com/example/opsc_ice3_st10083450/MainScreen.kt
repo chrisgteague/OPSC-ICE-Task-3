@@ -10,6 +10,8 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -37,7 +39,13 @@ class MainScreen : AppCompatActivity() {
         addBtn = findViewById(R.id.btnAddProfile)
 
         profileList = mutableListOf()
+        profileAdapter = ProfileAdapter(profileList)
 
+        recyclerView.adapter = profileAdapter
+
+
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = profileAdapter
         val currentUserID = FirebaseAuth.getInstance().currentUser?.uid
         if (currentUserID != null) {
             dbRef = FirebaseDatabase.getInstance().getReference("users").child(currentUserID)
