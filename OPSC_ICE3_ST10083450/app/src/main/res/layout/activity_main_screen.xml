@@ -94,11 +94,11 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btnback"
+        android:id="@+id/btnBackToLogin"
         android:layout_width="206dp"
         android:layout_height="101dp"
         android:backgroundTint="#2cd197"
-        android:text="Back"
+        android:text="Logout"
         android:textSize="30dp"
         android:textColor="@color/white"
         android:textColorHighlight="#FFFFFF"

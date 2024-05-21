@@ -49,6 +49,11 @@ class CreateProfileScreen : AppCompatActivity() {
         createProfileBtn = findViewById(R.id.btnCreateProfile)
         cancelBtn = findViewById(R.id.btnCancel)
 
+        cancelBtn.setOnClickListener{
+            var intent = Intent(this, MainScreen::class.java)
+            startActivity(intent)
+        }
+
         createProfileBtn.setOnClickListener{
             saveProfileData()
             var Intent = Intent(this, MainScreen::class.java)

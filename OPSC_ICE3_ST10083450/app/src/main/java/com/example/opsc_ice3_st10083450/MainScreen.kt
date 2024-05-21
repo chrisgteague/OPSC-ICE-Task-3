@@ -37,11 +37,16 @@ class MainScreen : AppCompatActivity() {
         noEntriesTextView = findViewById(R.id.textViewNoEntries)
         recyclerView = findViewById(R.id.recyclerViewProfile)
         addBtn = findViewById(R.id.btnAddProfile)
-
+        backBtn = findViewById(R.id.btnBackToLogin)
         profileList = mutableListOf()
         profileAdapter = ProfileAdapter(profileList)
 
         recyclerView.adapter = profileAdapter
+
+        backBtn.setOnClickListener{
+            var Intent = Intent(this, LoginScreen::class.java)
+            startActivity(Intent)
+        }
 
 
         recyclerView.layoutManager = LinearLayoutManager(this)
